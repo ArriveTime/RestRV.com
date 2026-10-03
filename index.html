@@ -6,19 +6,22 @@
 
 <title>RestRV.com | The RV Life & Travel Guide</title>
 
-<meta name="description" content="RestRV.com is your independent RV life and travel guide for RV resorts, campgrounds, road trips, food, fishing, hunting, parks, fuel, RV service, RV dealers and everything RV.">
-<meta name="keywords" content="RV travel, RV resorts, RV campgrounds, RV parks, RV road trips, RV life, RV dealers, RV sales, fishing, hunting, camping, motorhomes, travel trailers, RV service">
+<meta name="description" content="RestRV.com is your independent RV life and travel guide for RV resorts, campgrounds, historic America road trips, food, fishing, outdoor recreation, RV dealers, service, fuel and everything RV.">
+
+<meta name="keywords" content="RV travel, RV resorts, RV campgrounds, RV parks, historic landmarks, historic America, RV road trips, Route 66, national parks, RV life, RV dealers, RV sales, fishing, hunting, camping, motorhomes, travel trailers">
+
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#102c22">
 
 <meta property="og:title" content="RestRV.com | The RV Life & Travel Guide">
-<meta property="og:description" content="Stay. Drive. Eat. Explore. Fish. Camp. Buy. Enjoy. Everything RV in one place.">
+<meta property="og:description" content="Stay. Drive. Eat. Explore. Fish. Camp. Discover History. Everything RV in one place.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://restrv.com/">
 
 <link rel="canonical" href="https://restrv.com/">
 
 <style>
+
 :root{
   --green:#173f32;
   --green2:#245b46;
@@ -27,16 +30,24 @@
   --sand:#e5d4ad;
   --orange:#d87932;
   --gold:#d6a84b;
-  --white:#fff;
+  --white:#ffffff;
   --text:#25332d;
   --muted:#6c756f;
-  --card:#fff;
+  --card:#ffffff;
   --border:#d9ded9;
+
+  --usa-blue:#173b67;
+  --usa-red:#a82e35;
+  --usa-cream:#f7f3e9;
 }
 
-*{box-sizing:border-box}
+*{
+  box-sizing:border-box;
+}
 
-html{scroll-behavior:smooth}
+html{
+  scroll-behavior:smooth;
+}
 
 body{
   margin:0;
@@ -45,13 +56,20 @@ body{
   background:#f4f1e9;
 }
 
-a{color:inherit}
+a{
+  color:inherit;
+}
 
-button,input{
+button,
+input{
   font:inherit;
 }
 
-button{cursor:pointer}
+button{
+  cursor:pointer;
+}
+
+/* HEADER */
 
 .topbar{
   position:sticky;
@@ -72,10 +90,17 @@ button{cursor:pointer}
   font-size:1.7rem;
   font-weight:900;
   letter-spacing:-1px;
+  white-space:nowrap;
 }
 
-.logo .rest{color:white}
-.logo .rv{color:#ef9a4a}
+.logo .rest{
+  color:white;
+}
+
+.logo .rv{
+  color:#ef9a4a;
+}
+
 .logo .com{
   color:#d4ddda;
   font-size:.8rem;
@@ -91,11 +116,15 @@ button{cursor:pointer}
 .nav a{
   color:#e8efeb;
   text-decoration:none;
-  font-size:.82rem;
+  font-size:.80rem;
   font-weight:bold;
 }
 
-.nav a:hover{color:#f3a154}
+.nav a:hover{
+  color:#f3a154;
+}
+
+/* HERO */
 
 .hero{
   min-height:590px;
@@ -105,8 +134,9 @@ button{cursor:pointer}
   padding:75px 20px;
   color:white;
   text-align:center;
+
   background:
-    linear-gradient(rgba(7,25,18,.60),rgba(7,25,18,.82)),
+    linear-gradient(rgba(7,25,18,.60),rgba(7,25,18,.84)),
     url("https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?auto=format&fit=crop&w=1800&q=85")
     center/cover no-repeat;
 }
@@ -134,7 +164,9 @@ button{cursor:pointer}
   text-shadow:0 4px 20px rgba(0,0,0,.5);
 }
 
-.hero h1 span{color:#f0a05b}
+.hero h1 span{
+  color:#f0a05b;
+}
 
 .hero h2{
   margin:17px 0 8px;
@@ -195,11 +227,15 @@ button{cursor:pointer}
   text-decoration:underline;
 }
 
+/* GENERAL */
+
 .section{
   padding:70px 5%;
 }
 
-.section.white{background:white}
+.section.white{
+  background:white;
+}
 
 .section-title{
   max-width:900px;
@@ -220,7 +256,7 @@ button{cursor:pointer}
 }
 
 .section-title p{
-  max-width:700px;
+  max-width:720px;
   margin:10px auto;
   color:var(--muted);
   line-height:1.6;
@@ -287,6 +323,8 @@ button{cursor:pointer}
 .card a.action:hover{
   background:var(--orange);
 }
+
+/* TRIP BUILDER */
 
 .trip{
   color:white;
@@ -376,6 +414,177 @@ button{cursor:pointer}
   font-weight:bold;
 }
 
+/* HISTORIC AMERICA */
+
+.history{
+  color:white;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(10,39,72,.97),
+      rgba(28,61,97,.94)
+    );
+  position:relative;
+  overflow:hidden;
+}
+
+.history:before{
+  content:"★";
+  position:absolute;
+  right:-60px;
+  top:-120px;
+  font-size:420px;
+  color:rgba(255,255,255,.025);
+}
+
+.history-wrap{
+  position:relative;
+  z-index:2;
+  width:min(100%,1200px);
+  margin:auto;
+}
+
+.history .section-title small{
+  color:#f1c56a;
+}
+
+.history .section-title h2{
+  color:white;
+}
+
+.history .section-title p{
+  color:#e5e9ee;
+}
+
+.history-banner{
+  margin-bottom:30px;
+  padding:30px;
+  text-align:center;
+  border-top:4px solid var(--usa-red);
+  border-bottom:4px solid var(--usa-red);
+  background:rgba(255,255,255,.06);
+}
+
+.history-banner .flag{
+  font-size:3rem;
+}
+
+.history-banner h3{
+  margin:8px 0;
+  font-size:clamp(1.6rem,4vw,2.6rem);
+}
+
+.history-banner p{
+  max-width:750px;
+  margin:8px auto;
+  line-height:1.6;
+  color:#e8edf3;
+}
+
+.history-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+
+.history-card{
+  display:flex;
+  flex-direction:column;
+  min-height:235px;
+  padding:22px;
+  color:#24384c;
+  background:var(--usa-cream);
+  border-radius:9px;
+  border-top:5px solid var(--usa-red);
+}
+
+.history-card .history-icon{
+  font-size:2rem;
+}
+
+.history-card h3{
+  margin:12px 0 7px;
+  color:var(--usa-blue);
+}
+
+.history-card p{
+  flex:1;
+  margin:0 0 17px;
+  color:#64707a;
+  font-size:.88rem;
+  line-height:1.5;
+}
+
+.history-card button{
+  padding:10px;
+  color:white;
+  border:0;
+  border-radius:5px;
+  background:var(--usa-blue);
+  font-weight:bold;
+}
+
+.history-card button:hover{
+  background:var(--usa-red);
+}
+
+/* HISTORIC JOURNEYS */
+
+.journeys{
+  margin-top:45px;
+}
+
+.journeys-title{
+  margin-bottom:20px;
+  text-align:center;
+}
+
+.journeys-title h3{
+  margin:0;
+  font-size:2rem;
+}
+
+.journeys-title p{
+  color:#d7e0e8;
+}
+
+.journey-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+
+.journey{
+  padding:25px;
+  background:rgba(0,0,0,.18);
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:9px;
+}
+
+.journey h4{
+  margin:0 0 10px;
+  color:#f1c56a;
+  font-size:1.25rem;
+}
+
+.journey p{
+  margin:0 0 16px;
+  line-height:1.6;
+  color:#e3e8ed;
+  font-size:.9rem;
+}
+
+.journey button{
+  padding:10px 14px;
+  color:#173b67;
+  background:white;
+  border:0;
+  border-radius:5px;
+  font-weight:bold;
+}
+
+/* OFFICIAL SOURCES */
+
 .official{
   background:#e8efe9;
 }
@@ -409,6 +618,8 @@ button{cursor:pointer}
   color:#b45620;
   font-weight:bold;
 }
+
+/* FEATURE */
 
 .feature{
   width:min(100%,1150px);
@@ -470,6 +681,8 @@ button{cursor:pointer}
   font-size:.88rem;
 }
 
+/* FOOTER */
+
 footer{
   padding:45px 5%;
   color:#b7c2bd;
@@ -505,15 +718,34 @@ footer{
   font-size:.72rem;
 }
 
+/* MOBILE */
+
 @media(max-width:950px){
-  .grid{grid-template-columns:repeat(2,1fr)}
-  .official-grid{grid-template-columns:1fr}
-  .trip-options{grid-template-columns:repeat(2,1fr)}
-  .feature{grid-template-columns:1fr}
-  .feature-image{min-height:300px}
+
+  .grid,
+  .history-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .official-grid{
+    grid-template-columns:1fr;
+  }
+
+  .trip-options{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .feature{
+    grid-template-columns:1fr;
+  }
+
+  .feature-image{
+    min-height:300px;
+  }
 }
 
 @media(max-width:650px){
+
   .topbar{
     position:relative;
     flex-direction:column;
@@ -527,14 +759,13 @@ footer{
     min-height:560px;
   }
 
-  .search-box{
-    grid-template-columns:1fr;
-  }
-
+  .search-box,
   .grid,
   .trip-inputs,
   .trip-options,
-  .result-buttons{
+  .result-buttons,
+  .history-grid,
+  .journey-grid{
     grid-template-columns:1fr;
   }
 
@@ -547,12 +778,14 @@ footer{
     padding:22px;
   }
 }
+
 </style>
 </head>
 
 <body>
 
 <header class="topbar">
+
   <div class="logo">
     <span class="rest">Rest</span><span class="rv">RV</span><span class="com">.com</span>
   </div>
@@ -560,14 +793,17 @@ footer{
   <nav class="nav">
     <a href="#explore">EXPLORE</a>
     <a href="#trip">ROAD TRIPS</a>
+    <a href="#history">HISTORIC AMERICA</a>
     <a href="#camp">CAMP</a>
     <a href="#outdoors">OUTDOORS</a>
     <a href="#buy">BUY & SERVICE</a>
   </nav>
+
 </header>
 
 
 <section class="hero">
+
   <div class="hero-inner">
 
     <div class="hero-badge">
@@ -579,12 +815,14 @@ footer{
     <h2>YOUR ROAD. YOUR RV. YOUR ADVENTURE.</h2>
 
     <p>
-      Find places to stay, road trips, campgrounds, food,
-      fishing, outdoor recreation, RV dealers, service,
-      fuel and the resources that make life on the road easier.
+      Find places to stay, historic America, road trips,
+      campgrounds, food, fishing, outdoor recreation,
+      RV dealers, service, fuel and the resources that
+      make life on the road easier.
     </p>
 
     <div class="search-box">
+
       <input
         id="mainSearch"
         type="text"
@@ -595,148 +833,235 @@ footer{
       <button onclick="searchDestination()">
         EXPLORE →
       </button>
+
     </div>
 
     <div class="hero-links">
+
       Try:
-      <button onclick="quickSearch('Yellowstone National Park')">Yellowstone</button> •
-      <button onclick="quickSearch('Florida Keys')">Florida Keys</button> •
-      <button onclick="quickSearch('Grand Canyon')">Grand Canyon</button> •
-      <button onclick="quickSearch('Blue Ridge Parkway')">Blue Ridge Parkway</button>
+
+      <button onclick="quickSearch('Yellowstone National Park')">
+        Yellowstone
+      </button>
+
+      •
+
+      <button onclick="quickSearch('Gettysburg Pennsylvania')">
+        Gettysburg
+      </button>
+
+      •
+
+      <button onclick="quickSearch('Florida Keys')">
+        Florida Keys
+      </button>
+
+      •
+
+      <button onclick="quickSearch('Route 66')">
+        Route 66
+      </button>
+
     </div>
 
   </div>
+
 </section>
 
+
+<!-- EVERYTHING RV -->
 
 <section id="explore" class="section white">
 
   <div class="section-title">
+
     <small>EVERYTHING RV</small>
+
     <h2>Life On The Road Starts Here</h2>
+
     <p>
-      RestRV brings useful RV travel categories together in one
-      simple starting point.
+      RestRV brings useful RV travel categories together
+      in one simple starting point.
     </p>
+
   </div>
+
 
   <div class="grid">
 
     <article class="card">
+
       <div class="icon">🏕️</div>
+
       <h3>RV Resorts & Campgrounds</h3>
+
       <p>
-        Search RV parks, resorts, campgrounds, public lands
-        and camping destinations.
+        Search RV parks, resorts, campgrounds,
+        public lands and camping destinations.
       </p>
+
       <button onclick="categorySearch('RV parks and campgrounds')">
         FIND A PLACE TO STAY
       </button>
+
     </article>
 
+
     <article class="card">
+
       <div class="icon">🗺️</div>
+
       <h3>Road Trips</h3>
+
       <p>
-        Discover scenic highways, national parks, famous drives
-        and RV-friendly destinations.
+        Discover scenic highways, national parks,
+        famous drives and RV-friendly destinations.
       </p>
+
       <button onclick="categorySearch('RV road trips scenic drives')">
         EXPLORE ROAD TRIPS
       </button>
+
     </article>
 
+
     <article class="card">
+
       <div class="icon">🍔</div>
+
       <h3>Road Food</h3>
+
       <p>
-        Find diners, restaurants, BBQ, breakfast, groceries
-        and places to eat near your route.
+        Find diners, restaurants, BBQ, breakfast,
+        groceries and places to eat near your route.
       </p>
+
       <button onclick="categorySearch('restaurants')">
         FIND FOOD
       </button>
+
     </article>
 
+
     <article class="card">
+
       <div class="icon">🎣</div>
+
       <h3>Fishing</h3>
+
       <p>
-        Explore fishing destinations, lakes, rivers, marinas
-        and official licensing resources.
+        Explore fishing destinations, lakes, rivers,
+        marinas and official licensing resources.
       </p>
+
       <button onclick="categorySearch('fishing spots')">
         GO FISHING
       </button>
+
     </article>
 
+
     <article class="card">
+
       <div class="icon">🌲</div>
+
       <h3>Hunting & Outdoors</h3>
+
       <p>
-        Find outdoor destinations and connect with official
-        hunting information and regulations.
+        Find outdoor destinations and connect with
+        official hunting information and regulations.
       </p>
+
       <button onclick="categorySearch('hunting outdoor recreation')">
         EXPLORE OUTDOORS
       </button>
+
     </article>
 
+
     <article class="card">
+
       <div class="icon">⛽</div>
+
       <h3>Fuel & Propane</h3>
+
       <p>
-        Search for fuel stations, propane and other useful
+        Search for fuel stations, propane and useful
         RV travel stops near your destination.
       </p>
+
       <button onclick="categorySearch('RV fuel propane')">
         FIND FUEL
       </button>
+
     </article>
 
+
     <article class="card">
+
       <div class="icon">🔧</div>
+
       <h3>RV Repair & Service</h3>
+
       <p>
-        Locate RV repair, tires, towing, maintenance and
-        service businesses.
+        Locate RV repair, tires, towing,
+        maintenance and service businesses.
       </p>
+
       <button onclick="categorySearch('RV repair service')">
         FIND SERVICE
       </button>
+
     </article>
 
+
     <article id="buy" class="card">
+
       <div class="icon">🚐</div>
+
       <h3>RV Sales & Dealers</h3>
+
       <p>
-        Find dealers selling motorhomes, travel trailers,
-        fifth wheels and camper vans.
+        Find dealers selling motorhomes,
+        travel trailers, fifth wheels and camper vans.
       </p>
+
       <button onclick="categorySearch('RV dealers motorhomes for sale')">
         FIND RV DEALERS
       </button>
+
     </article>
 
+
     <article class="card">
+
       <div class="icon">🛒</div>
+
       <h3>RV Parts & Supplies</h3>
+
       <p>
-        Search for RV parts, batteries, generators, solar,
-        camping equipment and supplies.
+        Search for RV parts, batteries, generators,
+        solar equipment and camping supplies.
       </p>
+
       <button onclick="categorySearch('RV parts supplies')">
         FIND RV SUPPLIES
       </button>
+
     </article>
 
+
     <article class="card">
+
       <div class="icon">🏞️</div>
+
       <h3>National Parks</h3>
+
       <p>
-        Explore America's national parks and official camping
-        information.
+        Explore America's national parks and
+        official camping information.
       </p>
+
       <a
         class="action"
         href="https://www.nps.gov/findapark/index.htm"
@@ -745,48 +1070,89 @@ footer{
       >
         EXPLORE PARKS
       </a>
+
     </article>
 
+
     <article class="card">
-      <div class="icon">📍</div>
-      <h3>Things To Do</h3>
+
+      <div class="icon">🇺🇸</div>
+
+      <h3>Historic America</h3>
+
       <p>
-        Find attractions, trails, beaches, boating, golf,
-        museums and recreation along the way.
+        Discover landmarks, battlefields, presidential
+        sites, historic roads, monuments and museums.
       </p>
+
+      <a class="action" href="#history">
+        DISCOVER HISTORY
+      </a>
+
+    </article>
+
+
+    <article class="card">
+
+      <div class="icon">📍</div>
+
+      <h3>Things To Do</h3>
+
+      <p>
+        Find attractions, trails, beaches, boating,
+        golf, museums and recreation along the way.
+      </p>
+
       <button onclick="categorySearch('things to do attractions')">
         FIND THINGS TO DO
       </button>
+
     </article>
 
+
     <article class="card">
+
       <div class="icon">🌙</div>
+
       <h3>Rest Tonight</h3>
+
       <p>
         Search nearby camping and overnight RV options.
         Always verify permission and current property rules.
       </p>
+
       <button onclick="categorySearch('overnight RV camping')">
         FIND A STOP
       </button>
+
     </article>
 
   </div>
+
 </section>
 
+
+<!-- TRIP BUILDER -->
 
 <section id="trip" class="section trip">
 
   <div class="trip-wrap">
 
     <div class="section-title">
-      <small style="color:#ef9a4a">REST RV TRIP BUILDER</small>
+
+      <small style="color:#ef9a4a">
+        REST RV TRIP BUILDER
+      </small>
+
       <h2>Build My RV Trip</h2>
+
       <p>
         Enter where you're starting and where you're going.
-        Then explore useful stops along your journey.
+        Then explore useful stops around your destination.
       </p>
+
     </div>
+
 
     <div class="trip-builder">
 
@@ -810,24 +1176,35 @@ footer{
 
       </div>
 
+
       <div class="trip-options">
+
         <div class="trip-option">🏕️ CAMPGROUNDS</div>
+
+        <div class="trip-option">🇺🇸 HISTORIC SITES</div>
+
         <div class="trip-option">⛽ FUEL</div>
+
         <div class="trip-option">🍔 FOOD</div>
+
         <div class="trip-option">🎣 FISHING</div>
+
         <div class="trip-option">🔧 RV SERVICE</div>
+
         <div class="trip-option">🛒 GROCERIES</div>
-        <div class="trip-option">🏞️ PARKS</div>
+
         <div class="trip-option">📍 ATTRACTIONS</div>
+
       </div>
+
 
       <div id="tripResults">
 
         <strong id="tripTitle"></strong>
 
         <p>
-          Open your route, then use these shortcuts to search
-          for useful RV stops around your destination.
+          Open your route and use these shortcuts to
+          explore useful RV stops and attractions.
         </p>
 
         <div id="tripLinks" class="result-buttons"></div>
@@ -835,28 +1212,385 @@ footer{
       </div>
 
     </div>
+
   </div>
+
 </section>
 
+
+<!-- HISTORIC AMERICA -->
+
+<section id="history" class="section history">
+
+  <div class="history-wrap">
+
+    <div class="section-title">
+
+      <small>🇺🇸 HISTORIC AMERICA BY RV</small>
+
+      <h2>See America. Experience History.</h2>
+
+      <p>
+        Discover the places, roads, people and events that
+        shaped America — and make them part of your next
+        RV adventure.
+      </p>
+
+    </div>
+
+
+    <div class="history-banner">
+
+      <div class="flag">🇺🇸</div>
+
+      <h3>THE AMERICAN ROAD IS FULL OF HISTORY</h3>
+
+      <p>
+        From Revolutionary battlefields and presidential
+        homes to Route 66 and America's national monuments,
+        RestRV helps you discover history from the open road.
+      </p>
+
+    </div>
+
+
+    <div class="history-grid">
+
+
+      <article class="history-card">
+
+        <div class="history-icon">🏛️</div>
+
+        <h3>National Historic Landmarks</h3>
+
+        <p>
+          Discover nationally significant places connected
+          to American history, architecture, culture and heritage.
+        </p>
+
+        <button onclick="historySearch('National Historic Landmarks')">
+          EXPLORE LANDMARKS
+        </button>
+
+      </article>
+
+
+      <article class="history-card">
+
+        <div class="history-icon">🔔</div>
+
+        <h3>Revolutionary America</h3>
+
+        <p>
+          Explore Boston, Lexington, Concord, Philadelphia,
+          Valley Forge, Yorktown and other Revolutionary sites.
+        </p>
+
+        <button onclick="historySearch('American Revolutionary War historic sites')">
+          EXPLORE REVOLUTION
+        </button>
+
+      </article>
+
+
+      <article class="history-card">
+
+        <div class="history-icon">⚔️</div>
+
+        <h3>Civil War & Battlefields</h3>
+
+        <p>
+          Discover Gettysburg, Antietam, Manassas,
+          Appomattox and other historic battlefields.
+        </p>
+
+        <button onclick="historySearch('Civil War battlefields historic sites')">
+          EXPLORE BATTLEFIELDS
+        </button>
+
+      </article>
+
+
+      <article class="history-card">
+
+        <div class="history-icon">🎩</div>
+
+        <h3>Presidential History</h3>
+
+        <p>
+          Visit presidential homes, libraries, museums,
+          birthplaces and other significant sites.
+        </p>
+
+        <button onclick="historySearch('US presidential historic sites museums')">
+          EXPLORE PRESIDENTS
+        </button>
+
+      </article>
+
+
+      <article class="history-card">
+
+        <div class="history-icon">🛣️</div>
+
+        <h3>Historic Routes & Trails</h3>
+
+        <p>
+          Explore America's legendary roads, historic
+          trails and journeys across the country.
+        </p>
+
+        <button onclick="historySearch('historic American routes trails scenic drives')">
+          EXPLORE ROUTES
+        </button>
+
+      </article>
+
+
+      <article class="history-card">
+
+        <div class="history-icon">🛣️</div>
+
+        <h3>Route 66</h3>
+
+        <p>
+          Discover the Mother Road from Chicago to
+          California, including historic towns and roadside stops.
+        </p>
+
+        <button onclick="historySearch('Historic Route 66 attractions')">
+          EXPLORE ROUTE 66
+        </button>
+
+      </article>
+
+
+      <article class="history-card">
+
+        <div class="history-icon">🎖️</div>
+
+        <h3>Military History</h3>
+
+        <p>
+          Discover forts, military museums, battlefields,
+          ships, memorials and historic military locations.
+        </p>
+
+        <button onclick="historySearch('American military historic sites museums')">
+          EXPLORE MILITARY HISTORY
+        </button>
+
+      </article>
+
+
+      <article class="history-card">
+
+        <div class="history-icon">🪶</div>
+
+        <h3>Native American History</h3>
+
+        <p>
+          Explore tribal history, cultural sites,
+          museums and historic landscapes.
+        </p>
+
+        <button onclick="historySearch('Native American historic sites museums')">
+          EXPLORE HISTORY
+        </button>
+
+      </article>
+
+
+      <article class="history-card">
+
+        <div class="history-icon">✊</div>
+
+        <h3>Civil Rights History</h3>
+
+        <p>
+          Discover museums, memorials and places associated
+          with America's civil rights history.
+        </p>
+
+        <button onclick="historySearch('Civil Rights historic sites museums')">
+          EXPLORE CIVIL RIGHTS
+        </button>
+
+      </article>
+
+
+      <article class="history-card">
+
+        <div class="history-icon">🏘️</div>
+
+        <h3>Historic Towns</h3>
+
+        <p>
+          Discover preserved downtowns, historic districts
+          and communities with stories worth exploring.
+        </p>
+
+        <button onclick="historySearch('historic towns historic districts')">
+          FIND HISTORIC TOWNS
+        </button>
+
+      </article>
+
+
+      <article class="history-card">
+
+        <div class="history-icon">🗽</div>
+
+        <h3>Monuments & Memorials</h3>
+
+        <p>
+          Discover national monuments, memorials and
+          important places of remembrance.
+        </p>
+
+        <button onclick="historySearch('national monuments memorials')">
+          EXPLORE MONUMENTS
+        </button>
+
+      </article>
+
+
+      <article class="history-card">
+
+        <div class="history-icon">🏺</div>
+
+        <h3>Museums & Heritage</h3>
+
+        <p>
+          Find history museums, heritage centers,
+          presidential museums and cultural institutions.
+        </p>
+
+        <button onclick="historySearch('history museums heritage sites')">
+          FIND MUSEUMS
+        </button>
+
+      </article>
+
+    </div>
+
+
+    <!-- FEATURED JOURNEYS -->
+
+    <div class="journeys">
+
+      <div class="journeys-title">
+
+        <h3>🇺🇸 Featured Historic RV Journeys</h3>
+
+        <p>
+          Ideas for turning American history into your next road trip.
+        </p>
+
+      </div>
+
+
+      <div class="journey-grid">
+
+        <article class="journey">
+
+          <h4>🔔 Revolutionary America</h4>
+
+          <p>
+            Boston → Lexington & Concord → Philadelphia →
+            Valley Forge → Colonial Williamsburg → Yorktown
+          </p>
+
+          <button onclick="journeySearch('American Revolution historic road trip Boston Lexington Concord Philadelphia Valley Forge Williamsburg Yorktown')">
+            EXPLORE JOURNEY
+          </button>
+
+        </article>
+
+
+        <article class="journey">
+
+          <h4>⚔️ Civil War America</h4>
+
+          <p>
+            Gettysburg → Antietam → Harpers Ferry →
+            Manassas → Richmond → Appomattox
+          </p>
+
+          <button onclick="journeySearch('Civil War historic road trip Gettysburg Antietam Harpers Ferry Manassas Richmond Appomattox')">
+            EXPLORE JOURNEY
+          </button>
+
+        </article>
+
+
+        <article class="journey">
+
+          <h4>🎩 Presidents & Founders</h4>
+
+          <p>
+            Mount Vernon → Washington, D.C. →
+            Monticello → Montpelier → Presidential sites
+          </p>
+
+          <button onclick="journeySearch('Presidential historic sites Mount Vernon Washington DC Monticello Montpelier road trip')">
+            EXPLORE JOURNEY
+          </button>
+
+        </article>
+
+
+        <article class="journey">
+
+          <h4>🛣️ Historic Route 66</h4>
+
+          <p>
+            Chicago → St. Louis → Oklahoma →
+            Texas → New Mexico → Arizona → California
+          </p>
+
+          <button onclick="journeySearch('Historic Route 66 road trip attractions RV')">
+            EXPLORE ROUTE 66
+          </button>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- OFFICIAL RESOURCES -->
 
 <section id="camp" class="section official">
 
   <div class="section-title">
+
     <small>TRUSTED RESOURCES</small>
-    <h2>Official Camping & Outdoor Information</h2>
+
+    <h2>Official Travel & Outdoor Information</h2>
+
     <p>
-      When reservations, licenses or regulations matter,
-      RestRV sends travelers to the appropriate official source.
+      When reservations, history, licenses or regulations
+      matter, RestRV connects travelers with official sources.
     </p>
+
   </div>
+
 
   <div class="official-grid">
 
     <article class="official-card">
+
       <h3>🏕️ Federal Camping</h3>
+
       <p>
-        Search federal campgrounds, campsites, recreation areas,
-        permits and reservation opportunities.
+        Search federal campgrounds, campsites,
+        recreation areas and reservation opportunities.
       </p>
 
       <a
@@ -866,29 +1600,57 @@ footer{
       >
         Visit Recreation.gov →
       </a>
+
     </article>
 
+
     <article class="official-card">
-      <h3>🏞️ National Park Camping</h3>
+
+      <h3>🏞️ National Park Service</h3>
+
       <p>
-        Check individual National Park Service destinations for
-        campground information, restrictions and RV requirements.
+        Explore national parks, historic sites,
+        monuments and official visitor information.
       </p>
 
       <a
-        href="https://www.nps.gov/subjects/camping/campground.htm"
+        href="https://www.nps.gov/"
         target="_blank"
         rel="noopener"
       >
-        National Park Service →
+        Visit National Park Service →
       </a>
+
     </article>
 
-    <article id="outdoors" class="official-card">
-      <h3>🎣 Fishing & Hunting</h3>
+
+    <article class="official-card">
+
+      <h3>🇺🇸 National Historic Landmarks</h3>
+
       <p>
-        Rules, seasons and licenses vary. Verify current
-        requirements with the responsible state or federal agency.
+        Discover nationally significant historic
+        properties recognized by the National Park Service.
+      </p>
+
+      <a
+        href="https://www.nps.gov/subjects/nationalhistoriclandmarks/index.htm"
+        target="_blank"
+        rel="noopener"
+      >
+        Historic Landmarks →
+      </a>
+
+    </article>
+
+
+    <article id="outdoors" class="official-card">
+
+      <h3>🎣 Fishing & Hunting</h3>
+
+      <p>
+        Rules, seasons and licenses vary by location.
+        Verify current requirements with the responsible agency.
       </p>
 
       <a
@@ -898,11 +1660,55 @@ footer{
       >
         U.S. Fish & Wildlife Service →
       </a>
+
+    </article>
+
+
+    <article class="official-card">
+
+      <h3>🗺️ Find A National Park</h3>
+
+      <p>
+        Search National Park Service destinations
+        throughout the United States.
+      </p>
+
+      <a
+        href="https://www.nps.gov/findapark/index.htm"
+        target="_blank"
+        rel="noopener"
+      >
+        Find A Park →
+      </a>
+
+    </article>
+
+
+    <article class="official-card">
+
+      <h3>🚐 Plan Before You Go</h3>
+
+      <p>
+        Verify RV dimensions, road restrictions,
+        campground access, closures and current conditions.
+      </p>
+
+      <a
+        href="https://www.nps.gov/planyourvisit/index.htm"
+        target="_blank"
+        rel="noopener"
+      >
+        Plan Your Visit →
+      </a>
+
     </article>
 
   </div>
+
 </section>
 
+
+<!-- CHECKLIST -->
 
 <section class="section">
 
@@ -920,55 +1726,82 @@ footer{
 
       <p>
         A simple reminder list before heading down the road.
-        Your RV's manufacturer documentation and applicable laws
-        should always control.
+        Your RV manufacturer's documentation and applicable
+        laws should always control.
       </p>
 
       <ul class="checklist">
+
         <li>Check tires and tire pressure</li>
+
         <li>Confirm fuel and propane needs</li>
+
         <li>Secure interior items</li>
+
         <li>Check lights and signals</li>
+
         <li>Verify campground dimensions and hookups</li>
+
         <li>Review route height and weight restrictions</li>
+
         <li>Check weather and road conditions</li>
+
         <li>Verify reservations before arrival</li>
+
         <li>Review local outdoor regulations</li>
+
       </ul>
 
     </div>
 
   </div>
+
 </section>
 
+
+<!-- PURPOSE -->
 
 <section class="section white">
 
   <div class="section-title">
+
     <small>OUR PURPOSE</small>
+
     <h2>One Starting Point For RV Life</h2>
+
     <p>
-      RestRV.com is designed as an independent information and
-      discovery guide. We help travelers find resources; the
-      individual campground, dealer, government agency or other
-      provider remains the source for its current information.
+      RestRV.com is designed as an independent information,
+      travel and discovery guide. We help travelers find
+      resources while the individual campground, historic
+      site, dealer, government agency or other provider
+      remains the source for its current information.
     </p>
+
   </div>
 
+
   <div class="notice">
+
     <strong>IMPORTANT:</strong>
-    Campground availability, prices, road access, parking rules,
-    overnight policies, RV size restrictions, hunting and fishing
-    seasons, licenses, permits, fire restrictions and other
-    conditions can change. Always verify current information
-    directly with the campground, property owner, business,
+
+    Campground availability, prices, operating hours,
+    road access, parking rules, overnight policies,
+    RV size restrictions, historic-site access,
+    hunting and fishing seasons, licenses, permits,
+    fire restrictions and other conditions can change.
+
+    Always verify current information directly with the
+    campground, historic site, property owner, business,
     government agency or other responsible provider before
-    traveling, parking, camping, hunting, fishing or making a
-    purchase.
+    traveling, parking, camping, hunting, fishing or making
+    a purchase.
+
   </div>
 
 </section>
 
+
+<!-- FOOTER -->
 
 <footer>
 
@@ -982,57 +1815,92 @@ footer{
       YOUR ROAD. YOUR RV. YOUR ADVENTURE.
     </p>
 
+
     <div class="disclaimer">
 
-      <strong>INDEPENDENT WEBSITE & TRADEMARK NOTICE:</strong><br><br>
+      <strong>
+        INDEPENDENT WEBSITE & TRADEMARK NOTICE:
+      </strong>
 
-      RestRV.com is an independent informational and travel
+      <br><br>
+
+      RestRV.com is an independent informational, travel and
       discovery website. RestRV.com is not an RV resort,
-      campground, RV manufacturer, dealership, reservation
-      service or government agency.
+      campground, RV manufacturer, dealership, rental company,
+      reservation service or government agency.
 
-      RestRV.com is not affiliated with, sponsored by, endorsed
-      by or connected with any campground, RV resort, RV
-      manufacturer, dealer, retailer, restaurant, attraction,
+      <br><br>
+
+      RestRV.com is not affiliated with, sponsored by,
+      endorsed by or connected with any campground, RV resort,
+      RV manufacturer, dealer, rental company, retailer,
+      restaurant, attraction, historic site, museum,
       government agency or other third party listed or linked
       on this website unless expressly stated.
 
-      All third-party company names, product names, service
-      marks, logos and trademarks are the property of their
-      respective owners. References to third-party businesses
-      and organizations are provided for identification and
-      informational purposes only and do not imply endorsement
-      or affiliation.
+      <br><br>
+
+      All third-party company names, property names,
+      product names, service marks, logos and trademarks
+      are the property of their respective owners.
+      References to third-party businesses, historic sites
+      and organizations are provided for identification
+      and informational purposes only and do not imply
+      endorsement or affiliation.
+
+      <br><br>
 
       Information on RestRV.com is provided for general
       informational purposes and may change without notice.
+
       Users are responsible for independently confirming
-      pricing, availability, reservations, road conditions,
-      RV restrictions, parking and overnight rules, property
-      access, licenses, permits, hunting and fishing seasons,
-      regulations and safety requirements with the appropriate
-      provider or governmental authority.
+      pricing, availability, reservations, operating hours,
+      road conditions, RV restrictions, parking and overnight
+      rules, property access, licenses, permits, hunting and
+      fishing seasons, regulations and safety requirements
+      with the appropriate provider or governmental authority.
+
+      <br><br>
+
+      Historical information and links are provided for
+      educational and travel-planning purposes. Visitors
+      should consult the National Park Service, museums,
+      historic properties, tribal authorities and other
+      responsible organizations for authoritative information
+      regarding individual historic sites.
+
+      <br><br>
 
       RestRV.com does not provide legal, safety, hunting,
       fishing, mechanical or professional advice.
 
     </div>
 
+
     <div class="copyright">
-      © <span id="year"></span> RestRV.com. All Rights Reserved.
+      © <span id="year"></span> RestRV.com.
+      All Rights Reserved.
     </div>
 
   </div>
+
 </footer>
 
 
 <script>
+
+/* BASIC HELPERS */
+
 function value(id){
   return document.getElementById(id).value.trim();
 }
 
+
 function googleSearch(query){
-  if(!query) return;
+
+  if(!query){
+    return;
+  }
 
   window.open(
     "https://www.google.com/search?q=" +
@@ -1040,10 +1908,15 @@ function googleSearch(query){
     "_blank",
     "noopener"
   );
+
 }
 
+
 function mapsSearch(query){
-  if(!query) return;
+
+  if(!query){
+    return;
+  }
 
   window.open(
     "https://www.google.com/maps/search/" +
@@ -1051,42 +1924,104 @@ function mapsSearch(query){
     "_blank",
     "noopener"
   );
+
 }
 
+
+/* MAIN SEARCH */
+
 function searchDestination(){
+
   const destination=value("mainSearch");
 
   if(!destination){
-    alert("Please enter a city, state, ZIP or destination.");
+
+    alert(
+      "Please enter a city, state, ZIP or destination."
+    );
+
     return;
+
   }
 
   mapsSearch(
-    "RV campgrounds resorts attractions near " +
+    "RV campgrounds attractions historic sites near " +
     destination
   );
+
 }
+
 
 function quickSearch(destination){
-  document.getElementById("mainSearch").value=destination;
+
+  document.getElementById("mainSearch").value=
+    destination;
+
   searchDestination();
+
 }
 
+
+/* CATEGORY SEARCH */
+
 function categorySearch(category){
+
   let destination=value("mainSearch");
 
   if(destination){
-    mapsSearch(category + " near " + destination);
+
+    mapsSearch(
+      category + " near " + destination
+    );
+
   }else{
+
     const place=prompt(
       "Enter a city, state, ZIP or destination:"
     );
 
     if(place){
-      mapsSearch(category + " near " + place);
+
+      mapsSearch(
+        category + " near " + place
+      );
+
     }
+
   }
+
 }
+
+
+/* HISTORIC AMERICA */
+
+function historySearch(topic){
+
+  let destination=value("mainSearch");
+
+  if(destination){
+
+    googleSearch(
+      topic + " near " + destination
+    );
+
+  }else{
+
+    googleSearch(topic);
+
+  }
+
+}
+
+
+function journeySearch(topic){
+
+  googleSearch(topic);
+
+}
+
+
+/* TRIP BUILDER */
 
 function buildTrip(){
 
@@ -1094,80 +2029,180 @@ function buildTrip(){
   const end=value("tripEnd");
 
   if(!start || !end){
-    alert("Please enter both your starting point and destination.");
+
+    alert(
+      "Please enter both your starting point and destination."
+    );
+
     return;
+
   }
 
-  const results=document.getElementById("tripResults");
-  const title=document.getElementById("tripTitle");
-  const links=document.getElementById("tripLinks");
 
-  title.textContent=start + " → " + end;
+  const results=
+    document.getElementById("tripResults");
+
+  const title=
+    document.getElementById("tripTitle");
+
+  const links=
+    document.getElementById("tripLinks");
+
+
+  title.textContent=
+    start + " → " + end;
+
 
   const searches=[
-    ["🗺️ OPEN ROUTE",
+
+    [
+      "🗺️ OPEN ROUTE",
+
       "https://www.google.com/maps/dir/?api=1&origin=" +
       encodeURIComponent(start) +
       "&destination=" +
-      encodeURIComponent(end)],
+      encodeURIComponent(end)
+    ],
 
-    ["🏕️ CAMPGROUNDS",
-      "https://www.google.com/maps/search/" +
-      encodeURIComponent("RV campgrounds near " + end)],
+    [
+      "🏕️ CAMPGROUNDS",
 
-    ["⛽ FUEL",
       "https://www.google.com/maps/search/" +
-      encodeURIComponent("fuel stations near " + end)],
+      encodeURIComponent(
+        "RV campgrounds near " + end
+      )
+    ],
 
-    ["🍔 FOOD",
-      "https://www.google.com/maps/search/" +
-      encodeURIComponent("restaurants near " + end)],
+    [
+      "🇺🇸 HISTORIC SITES",
 
-    ["🎣 FISHING",
       "https://www.google.com/maps/search/" +
-      encodeURIComponent("fishing near " + end)],
+      encodeURIComponent(
+        "historic landmarks near " + end
+      )
+    ],
 
-    ["🔧 RV SERVICE",
-      "https://www.google.com/maps/search/" +
-      encodeURIComponent("RV repair near " + end)],
+    [
+      "⛽ FUEL",
 
-    ["🛒 GROCERIES",
       "https://www.google.com/maps/search/" +
-      encodeURIComponent("grocery stores near " + end)],
+      encodeURIComponent(
+        "fuel stations near " + end
+      )
+    ],
 
-    ["📍 ATTRACTIONS",
-      "https://www.google.com/maps/search/" +
-      encodeURIComponent("attractions near " + end)],
+    [
+      "🍔 FOOD",
 
-    ["🚐 RV DEALERS",
       "https://www.google.com/maps/search/" +
-      encodeURIComponent("RV dealers near " + end)]
+      encodeURIComponent(
+        "restaurants near " + end
+      )
+    ],
+
+    [
+      "🎣 FISHING",
+
+      "https://www.google.com/maps/search/" +
+      encodeURIComponent(
+        "fishing near " + end
+      )
+    ],
+
+    [
+      "🔧 RV SERVICE",
+
+      "https://www.google.com/maps/search/" +
+      encodeURIComponent(
+        "RV repair near " + end
+      )
+    ],
+
+    [
+      "🛒 GROCERIES",
+
+      "https://www.google.com/maps/search/" +
+      encodeURIComponent(
+        "grocery stores near " + end
+      )
+    ],
+
+    [
+      "📍 ATTRACTIONS",
+
+      "https://www.google.com/maps/search/" +
+      encodeURIComponent(
+        "attractions near " + end
+      )
+    ],
+
+    [
+      "🚐 RV DEALERS",
+
+      "https://www.google.com/maps/search/" +
+      encodeURIComponent(
+        "RV dealers near " + end
+      )
+    ]
+
   ];
+
 
   links.innerHTML="";
 
-  searches.forEach(item=>{
-    const a=document.createElement("a");
+
+  searches.forEach(function(item){
+
+    const a=
+      document.createElement("a");
+
     a.href=item[1];
+
     a.target="_blank";
+
     a.rel="noopener";
+
     a.textContent=item[0];
+
     links.appendChild(a);
+
   });
+
 
   results.style.display="block";
-  results.scrollIntoView({behavior:"smooth",block:"center"});
-}
 
-document.getElementById("mainSearch")
-  .addEventListener("keydown",function(e){
-    if(e.key==="Enter"){
-      searchDestination();
-    }
+
+  results.scrollIntoView({
+    behavior:"smooth",
+    block:"center"
   });
 
-document.getElementById("year").textContent=
+}
+
+
+/* ENTER KEY SEARCH */
+
+document
+  .getElementById("mainSearch")
+  .addEventListener(
+    "keydown",
+    function(e){
+
+      if(e.key==="Enter"){
+        searchDestination();
+      }
+
+    }
+  );
+
+
+/* AUTOMATIC COPYRIGHT YEAR */
+
+document
+  .getElementById("year")
+  .textContent=
   new Date().getFullYear();
+
 </script>
 
 </body>
